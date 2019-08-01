@@ -28,4 +28,20 @@
     Private Sub EliminarConsolaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarConsolaToolStripMenuItem.Click
         FrmEliminarConsola.ShowDialog()
     End Sub
+
+    Private Sub ListarJuegosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarJuegosToolStripMenuItem.Click
+        frmPrincipalJuego.ShowDialog()
+    End Sub
+
+    Private Sub AgregarJuegoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarJuegoToolStripMenuItem.Click
+        frmAgregarJuego.ShowDialog()
+    End Sub
+
+    Private Sub ListarCategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarCategoriaToolStripMenuItem.Click
+        frmPrincipalCategorias.ShowDialog()
+    End Sub
+
+    Private Sub AgregarCategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarCategoriaToolStripMenuItem.Click
+        frmAgregarCategoria.ShowDialog()
+    End Sub
 End Class

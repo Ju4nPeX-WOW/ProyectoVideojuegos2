@@ -34,7 +34,6 @@ Partial Class FrmMenu
         Me.ConsolasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarCategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarCategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarCategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -97,18 +96,18 @@ Partial Class FrmMenu
         'AgregarJuegoToolStripMenuItem
         '
         Me.AgregarJuegoToolStripMenuItem.Name = "AgregarJuegoToolStripMenuItem"
-        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AgregarJuegoToolStripMenuItem.Text = "Agregar juego"
         '
         'ListarJuegosToolStripMenuItem
         '
         Me.ListarJuegosToolStripMenuItem.Name = "ListarJuegosToolStripMenuItem"
-        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ListarJuegosToolStripMenuItem.Text = "Listar juegos"
         '
         'ConsolasToolStripMenuItem
         '
-        Me.ConsolasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarCategoriaToolStripMenuItem, Me.ListarCategoriaToolStripMenuItem, Me.ModificarCategoriaToolStripMenuItem})
+        Me.ConsolasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarCategoriaToolStripMenuItem, Me.ListarCategoriaToolStripMenuItem})
         Me.ConsolasToolStripMenuItem.Name = "ConsolasToolStripMenuItem"
         Me.ConsolasToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
         Me.ConsolasToolStripMenuItem.Text = "Categorias"
@@ -116,20 +115,14 @@ Partial Class FrmMenu
         'AgregarCategoriaToolStripMenuItem
         '
         Me.AgregarCategoriaToolStripMenuItem.Name = "AgregarCategoriaToolStripMenuItem"
-        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AgregarCategoriaToolStripMenuItem.Text = "Agregar categoria"
         '
         'ListarCategoriaToolStripMenuItem
         '
         Me.ListarCategoriaToolStripMenuItem.Name = "ListarCategoriaToolStripMenuItem"
-        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ListarCategoriaToolStripMenuItem.Text = "Listar categoria"
-        '
-        'ModificarCategoriaToolStripMenuItem
-        '
-        Me.ModificarCategoriaToolStripMenuItem.Name = "ModificarCategoriaToolStripMenuItem"
-        Me.ModificarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.ModificarCategoriaToolStripMenuItem.Text = "Modificar categoria"
         '
         'EmpleadosToolStripMenuItem
         '
@@ -141,13 +134,13 @@ Partial Class FrmMenu
         'AgregarEmpleadosToolStripMenuItem
         '
         Me.AgregarEmpleadosToolStripMenuItem.Name = "AgregarEmpleadosToolStripMenuItem"
-        Me.AgregarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.AgregarEmpleadosToolStripMenuItem.Text = "Agregar empleados"
         '
         'ListarEmpleadosToolStripMenuItem
         '
         Me.ListarEmpleadosToolStripMenuItem.Name = "ListarEmpleadosToolStripMenuItem"
-        Me.ListarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.ListarEmpleadosToolStripMenuItem.Text = "Listar empleados"
         '
         'ConsolasToolStripMenuItem1
@@ -160,25 +153,25 @@ Partial Class FrmMenu
         'AgregarConsolToolStripMenuItem
         '
         Me.AgregarConsolToolStripMenuItem.Name = "AgregarConsolToolStripMenuItem"
-        Me.AgregarConsolToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarConsolToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.AgregarConsolToolStripMenuItem.Text = "Agregar consola"
         '
         'ModificarConsolaToolStripMenuItem
         '
         Me.ModificarConsolaToolStripMenuItem.Name = "ModificarConsolaToolStripMenuItem"
-        Me.ModificarConsolaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarConsolaToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.ModificarConsolaToolStripMenuItem.Text = "Modificar consola"
         '
         'EliminarConsolaToolStripMenuItem
         '
         Me.EliminarConsolaToolStripMenuItem.Name = "EliminarConsolaToolStripMenuItem"
-        Me.EliminarConsolaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EliminarConsolaToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.EliminarConsolaToolStripMenuItem.Text = "Eliminar consola"
         '
         'ListarConsolasToolStripMenuItem
         '
         Me.ListarConsolasToolStripMenuItem.Name = "ListarConsolasToolStripMenuItem"
-        Me.ListarConsolasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarConsolasToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.ListarConsolasToolStripMenuItem.Text = "Listar consolas"
         '
         'FrmMenu
@@ -212,7 +205,6 @@ Partial Class FrmMenu
     Friend WithEvents AgregarCategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListarCategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ModificarCategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsolasToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents AgregarConsolToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ModificarConsolaToolStripMenuItem As ToolStripMenuItem

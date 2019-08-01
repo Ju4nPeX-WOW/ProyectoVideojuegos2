@@ -74,15 +74,26 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bsn\bsnCategoria.vb" />
     <Compile Include="Bsn\BsnConsole.vb" />
     <Compile Include="Bsn\BsnEmpleado.vb" />
+    <Compile Include="Bsn\bsnJuego.vb" />
     <Compile Include="Bsn\BsnUser.vb" />
+    <Compile Include="Categoria.vb" />
     <Compile Include="Conexion.vb" />
     <Compile Include="Consola.vb" />
+    <Compile Include="Dao\daoCategoria.vb" />
     <Compile Include="Dao\DaoConsole.vb" />
     <Compile Include="Dao\DaoEmpleado.vb" />
+    <Compile Include="Dao\daoJuego.vb" />
     <Compile Include="Dao\DaoUser.vb" />
     <Compile Include="Empleado.vb" />
+    <Compile Include="frmAgregarCategoria.Designer.vb">
+      <DependentUpon>frmAgregarCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmAgregarConsola.Designer.vb">
       <DependentUpon>FrmAgregarConsola.vb</DependentUpon>
     </Compile>
@@ -93,6 +104,18 @@
       <DependentUpon>FrmAgregarEmpleado.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmAgregarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarJuego.Designer.vb">
+      <DependentUpon>frmAgregarJuego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarJuego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalJuego.Designer.vb">
+      <DependentUpon>frmPrincipalJuego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalJuego.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEliminarConsola.Designer.vb">
@@ -125,6 +148,12 @@
     <Compile Include="FrmModificarConsola.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPrincipalCategorias.Designer.vb">
+      <DependentUpon>frmPrincipalCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmVenta.Designer.vb">
       <DependentUpon>FrmVenta.vb</DependentUpon>
     </Compile>
@@ -132,6 +161,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instrucciones.vb" />
+    <Compile Include="Juego.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -157,11 +187,20 @@
     <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAgregarCategoria.resx">
+      <DependentUpon>frmAgregarCategoria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarConsola.resx">
       <DependentUpon>FrmAgregarConsola.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarEmpleado.resx">
       <DependentUpon>FrmAgregarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarJuego.resx">
+      <DependentUpon>frmAgregarJuego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalJuego.resx">
+      <DependentUpon>frmPrincipalJuego.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarConsola.resx">
       <DependentUpon>FrmEliminarConsola.vb</DependentUpon>
@@ -177,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarConsola.resx">
       <DependentUpon>FrmModificarConsola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalCategorias.resx">
+      <DependentUpon>frmPrincipalCategorias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVenta.resx">
       <DependentUpon>FrmVenta.vb</DependentUpon>
