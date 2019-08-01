@@ -26,10 +26,12 @@ Partial Class FrmAgregarConsola
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,9 +48,9 @@ Partial Class FrmAgregarConsola
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(73, 136)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.Size = New System.Drawing.Size(52, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Marca"
+        Me.Label2.Text = "Categoria"
         '
         'Label3
         '
@@ -65,13 +67,6 @@ Partial Class FrmAgregarConsola
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(461, 20)
         Me.TextBox1.TabIndex = 4
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(216, 133)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(461, 20)
-        Me.TextBox2.TabIndex = 5
         '
         'TextBox3
         '
@@ -92,12 +87,37 @@ Partial Class FrmAgregarConsola
         '
         'Button2
         '
+        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button2.Location = New System.Drawing.Point(105, 323)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(137, 52)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Cerrar"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(216, 133)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(461, 21)
+        Me.ComboBox1.TabIndex = 9
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(73, 271)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Precio:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(216, 268)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(174, 20)
+        Me.TextBox2.TabIndex = 11
         '
         'FrmAgregarConsola
         '
@@ -106,10 +126,12 @@ Partial Class FrmAgregarConsola
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Button2
         Me.ClientSize = New System.Drawing.Size(800, 408)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -125,8 +147,10 @@ Partial Class FrmAgregarConsola
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox2 As TextBox
 End Class

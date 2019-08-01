@@ -1,29 +1,26 @@
 ﻿Public Class FrmModificarConsola
     Dim dataset As New DataSet
     Dim BsnConsole As New BsnConsole
+    Dim BsnCategoria As New bsnCategoria
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Close()
     End Sub
-
-
-
     Private Sub FrmModificarConsola_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dataset = BsnConsole.obtenerConsolas
         If (dataset.Tables(0).Rows.Count > 0) Then
             dgvConsolas.DataSource = dataset.Tables(0).DefaultView
         End If
+
+        ComboBox1.DataSource = BsnCategoria.CargarCategorias
+        ComboBox1.ValueMember = "Id_categoria"
+        ComboBox1.DisplayMember = "nombre"
     End Sub
 
-
     Private Sub dgvConsolas_SelectionChanged(sender As Object, e As EventArgs) Handles dgvConsolas.SelectionChanged
-
         lblIdConsola.Text = dgvConsolas.CurrentRow.Cells(0).Value
         TextBox1.Text = dgvConsolas.CurrentRow.Cells(1).Value
-        TextBox2.Text = dgvConsolas.CurrentRow.Cells(2).Value
         TextBox3.Text = dgvConsolas.CurrentRow.Cells(3).Value
-
-
-
+        TextBox2.Text = dgvConsolas.CurrentRow.Cells(4).Value
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -37,11 +34,7 @@
             contador = contador + 1
             pal = pal & contador & "-Agregue una Consola" & vbCr
         End If
-        If TextBox2.Text = "" Then
-            validado = False
-            contador = contador + 1
-            pal = pal & contador & "-Agregue una Marca" & vbCr
-        End If
+
         If TextBox3.Text = "" Then
             validado = False
             contador = contador + 1
@@ -56,8 +49,9 @@
             Dim Consola As New Consola()
             Consola.Id = lblIdConsola.Text
             Consola.NameConsole = TextBox1.Text
-            Consola.Marca = TextBox2.Text
+            Consola.Categoria = ComboBox1.SelectedValue
             Consola.Descripcion = TextBox3.Text
+            Consola.Precio = TextBox2.Text
 
             BsnConsole.ModificarConsola(Consola)
             MsgBox("Consola modificada", vbInformation, "Realizado correctamente")

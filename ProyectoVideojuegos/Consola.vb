@@ -1,8 +1,17 @@
 ﻿Public Class Consola
     Private _id As String
     Private _console As String
-    Private _marca As String
+    Private _categoria As String
     Private _descripcion As String
+    Private _precio As Integer
+    Public Property Precio() As Integer
+        Get
+            Return _precio
+        End Get
+        Set(ByVal value As Integer)
+            _precio = value
+        End Set
+    End Property
     Public Property Id() As String
         Get
             Return _id
@@ -19,12 +28,12 @@
             _descripcion = value
         End Set
     End Property
-    Public Property Marca() As String
+    Public Property Categoria() As String
         Get
-            Return _marca
+            Return _categoria
         End Get
         Set(ByVal value As String)
-            _marca = value
+            _categoria = value
         End Set
     End Property
     Public Property NameConsole() As String
