@@ -77,13 +77,13 @@ Partial Class FrmMenu
         'HacerVentaToolStripMenuItem
         '
         Me.HacerVentaToolStripMenuItem.Name = "HacerVentaToolStripMenuItem"
-        Me.HacerVentaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.HacerVentaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HacerVentaToolStripMenuItem.Text = "Hacer venta"
         '
         'ListarVentasToolStripMenuItem
         '
         Me.ListarVentasToolStripMenuItem.Name = "ListarVentasToolStripMenuItem"
-        Me.ListarVentasToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ListarVentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ListarVentasToolStripMenuItem.Text = "Listar ventas"
         '
         'JuegosToolStripMenuItem
@@ -96,13 +96,13 @@ Partial Class FrmMenu
         'AgregarJuegoToolStripMenuItem
         '
         Me.AgregarJuegoToolStripMenuItem.Name = "AgregarJuegoToolStripMenuItem"
-        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.AgregarJuegoToolStripMenuItem.Text = "Agregar juego"
         '
         'ListarJuegosToolStripMenuItem
         '
         Me.ListarJuegosToolStripMenuItem.Name = "ListarJuegosToolStripMenuItem"
-        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.ListarJuegosToolStripMenuItem.Text = "Listar juegos"
         '
         'ConsolasToolStripMenuItem
@@ -115,13 +115,13 @@ Partial Class FrmMenu
         'AgregarCategoriaToolStripMenuItem
         '
         Me.AgregarCategoriaToolStripMenuItem.Name = "AgregarCategoriaToolStripMenuItem"
-        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.AgregarCategoriaToolStripMenuItem.Text = "Agregar categoria"
         '
         'ListarCategoriaToolStripMenuItem
         '
         Me.ListarCategoriaToolStripMenuItem.Name = "ListarCategoriaToolStripMenuItem"
-        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.ListarCategoriaToolStripMenuItem.Text = "Listar categoria"
         '
         'EmpleadosToolStripMenuItem

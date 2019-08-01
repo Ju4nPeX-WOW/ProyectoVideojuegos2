@@ -48,4 +48,9 @@
         Me.Hide()
         frmAgregarCategoria.Show()
     End Sub
+
+    Private Sub HacerVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HacerVentaToolStripMenuItem.Click
+        Dim form As New FrmVenta
+        form.ShowDialog()
+    End Sub
 End Class

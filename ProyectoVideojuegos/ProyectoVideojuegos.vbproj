@@ -79,6 +79,7 @@
     <Compile Include="Bsn\BsnEmpleado.vb" />
     <Compile Include="Bsn\bsnJuego.vb" />
     <Compile Include="Bsn\BsnUser.vb" />
+    <Compile Include="Bsn\BsnVenta.vb" />
     <Compile Include="Categoria.vb" />
     <Compile Include="Conexion.vb" />
     <Compile Include="Consola.vb" />
@@ -87,6 +88,8 @@
     <Compile Include="Dao\DaoEmpleado.vb" />
     <Compile Include="Dao\daoJuego.vb" />
     <Compile Include="Dao\DaoUser.vb" />
+    <Compile Include="Dao\DaoVenta.vb" />
+    <Compile Include="DetalleVenta.vb" />
     <Compile Include="Empleado.vb" />
     <Compile Include="frmAgregarCategoria.Designer.vb">
       <DependentUpon>frmAgregarCategoria.vb</DependentUpon>
@@ -185,6 +188,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="User.vb" />
+    <Compile Include="Venta.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmAgregarCategoria.resx">
