@@ -27,10 +27,6 @@ Partial Class FrmVenta
         Me.DgvProductos = New System.Windows.Forms.DataGridView()
         Me.DgvProductosSeleccionados = New System.Windows.Forms.DataGridView()
         Me.LblEmpleado = New System.Windows.Forms.Label()
-        Me.LblRut = New System.Windows.Forms.Label()
-        Me.TxtRut = New System.Windows.Forms.TextBox()
-        Me.TxtDV = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.NudCantidad = New System.Windows.Forms.NumericUpDown()
@@ -38,8 +34,15 @@ Partial Class FrmVenta
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.BtnDisminuir = New System.Windows.Forms.Button()
         Me.BtnAñadir = New System.Windows.Forms.Button()
-        Me.BtnTotal = New System.Windows.Forms.TextBox()
+        Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.LblTotal = New System.Windows.Forms.Label()
+        Me.CmbTipo = New System.Windows.Forms.ComboBox()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvProductosSeleccionados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,14 +72,15 @@ Partial Class FrmVenta
         Me.DgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvProductos.Location = New System.Drawing.Point(40, 92)
         Me.DgvProductos.Name = "DgvProductos"
-        Me.DgvProductos.Size = New System.Drawing.Size(721, 76)
+        Me.DgvProductos.Size = New System.Drawing.Size(721, 109)
         Me.DgvProductos.TabIndex = 15
         '
         'DgvProductosSeleccionados
         '
         Me.DgvProductosSeleccionados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvProductosSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvProductosSeleccionados.Location = New System.Drawing.Point(40, 203)
+        Me.DgvProductosSeleccionados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Tipo, Me.Id, Me.Nombre, Me.Precio, Me.Cantidad, Me.Total})
+        Me.DgvProductosSeleccionados.Location = New System.Drawing.Point(40, 236)
         Me.DgvProductosSeleccionados.Name = "DgvProductosSeleccionados"
         Me.DgvProductosSeleccionados.Size = New System.Drawing.Size(721, 94)
         Me.DgvProductosSeleccionados.TabIndex = 30
@@ -88,38 +92,6 @@ Partial Class FrmVenta
         Me.LblEmpleado.Name = "LblEmpleado"
         Me.LblEmpleado.Size = New System.Drawing.Size(0, 13)
         Me.LblEmpleado.TabIndex = 31
-        '
-        'LblRut
-        '
-        Me.LblRut.AutoSize = True
-        Me.LblRut.Location = New System.Drawing.Point(271, 23)
-        Me.LblRut.Name = "LblRut"
-        Me.LblRut.Size = New System.Drawing.Size(30, 13)
-        Me.LblRut.TabIndex = 32
-        Me.LblRut.Text = "Rut :"
-        '
-        'TxtRut
-        '
-        Me.TxtRut.Location = New System.Drawing.Point(307, 20)
-        Me.TxtRut.Name = "TxtRut"
-        Me.TxtRut.Size = New System.Drawing.Size(109, 20)
-        Me.TxtRut.TabIndex = 33
-        '
-        'TxtDV
-        '
-        Me.TxtDV.Location = New System.Drawing.Point(438, 20)
-        Me.TxtDV.Name = "TxtDV"
-        Me.TxtDV.Size = New System.Drawing.Size(19, 20)
-        Me.TxtDV.TabIndex = 34
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(422, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(10, 13)
-        Me.Label1.TabIndex = 35
-        Me.Label1.Text = "-"
         '
         'BtnBuscar
         '
@@ -139,14 +111,14 @@ Partial Class FrmVenta
         '
         'NudCantidad
         '
-        Me.NudCantidad.Location = New System.Drawing.Point(581, 175)
+        Me.NudCantidad.Location = New System.Drawing.Point(581, 208)
         Me.NudCantidad.Name = "NudCantidad"
         Me.NudCantidad.Size = New System.Drawing.Size(55, 20)
         Me.NudCantidad.TabIndex = 38
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(646, 174)
+        Me.BtnAgregar.Location = New System.Drawing.Point(646, 207)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(115, 23)
         Me.BtnAgregar.TabIndex = 39
@@ -155,7 +127,7 @@ Partial Class FrmVenta
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(686, 311)
+        Me.BtnEliminar.Location = New System.Drawing.Point(686, 344)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.BtnEliminar.TabIndex = 40
@@ -164,7 +136,7 @@ Partial Class FrmVenta
         '
         'BtnDisminuir
         '
-        Me.BtnDisminuir.Location = New System.Drawing.Point(592, 311)
+        Me.BtnDisminuir.Location = New System.Drawing.Point(592, 344)
         Me.BtnDisminuir.Name = "BtnDisminuir"
         Me.BtnDisminuir.Size = New System.Drawing.Size(75, 23)
         Me.BtnDisminuir.TabIndex = 41
@@ -173,36 +145,83 @@ Partial Class FrmVenta
         '
         'BtnAñadir
         '
-        Me.BtnAñadir.Location = New System.Drawing.Point(500, 311)
+        Me.BtnAñadir.Location = New System.Drawing.Point(500, 344)
         Me.BtnAñadir.Name = "BtnAñadir"
         Me.BtnAñadir.Size = New System.Drawing.Size(75, 23)
         Me.BtnAñadir.TabIndex = 42
         Me.BtnAñadir.Text = "Añadir"
         Me.BtnAñadir.UseVisualStyleBackColor = True
         '
-        'BtnTotal
+        'TxtTotal
         '
-        Me.BtnTotal.Location = New System.Drawing.Point(101, 314)
-        Me.BtnTotal.Name = "BtnTotal"
-        Me.BtnTotal.Size = New System.Drawing.Size(100, 20)
-        Me.BtnTotal.TabIndex = 43
+        Me.TxtTotal.Location = New System.Drawing.Point(101, 347)
+        Me.TxtTotal.Name = "TxtTotal"
+        Me.TxtTotal.Size = New System.Drawing.Size(100, 20)
+        Me.TxtTotal.TabIndex = 43
         '
         'LblTotal
         '
         Me.LblTotal.AutoSize = True
-        Me.LblTotal.Location = New System.Drawing.Point(42, 317)
+        Me.LblTotal.Location = New System.Drawing.Point(42, 350)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(48, 13)
         Me.LblTotal.TabIndex = 44
         Me.LblTotal.Text = "TOTAL :"
+        '
+        'CmbTipo
+        '
+        Me.CmbTipo.DisplayMember = "H,M"
+        Me.CmbTipo.FormattingEnabled = True
+        Me.CmbTipo.Location = New System.Drawing.Point(40, 20)
+        Me.CmbTipo.Name = "CmbTipo"
+        Me.CmbTipo.Size = New System.Drawing.Size(121, 21)
+        Me.CmbTipo.TabIndex = 45
+        Me.CmbTipo.ValueMember = "0,1"
+        '
+        'Tipo
+        '
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        '
+        'Id
+        '
+        Me.Id.HeaderText = "Id"
+        Me.Id.Name = "Id"
+        Me.Id.ReadOnly = True
+        '
+        'Nombre
+        '
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        Me.Cantidad.ReadOnly = True
+        '
+        'Total
+        '
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
         '
         'FrmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.LblTotal)
-        Me.Controls.Add(Me.BtnTotal)
+        Me.Controls.Add(Me.TxtTotal)
         Me.Controls.Add(Me.BtnAñadir)
         Me.Controls.Add(Me.BtnDisminuir)
         Me.Controls.Add(Me.BtnEliminar)
@@ -210,10 +229,6 @@ Partial Class FrmVenta
         Me.Controls.Add(Me.NudCantidad)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TxtDV)
-        Me.Controls.Add(Me.TxtRut)
-        Me.Controls.Add(Me.LblRut)
         Me.Controls.Add(Me.LblEmpleado)
         Me.Controls.Add(Me.DgvProductosSeleccionados)
         Me.Controls.Add(Me.BtnCerrar)
@@ -233,10 +248,6 @@ Partial Class FrmVenta
     Friend WithEvents DgvProductos As DataGridView
     Friend WithEvents DgvProductosSeleccionados As DataGridView
     Friend WithEvents LblEmpleado As Label
-    Friend WithEvents LblRut As Label
-    Friend WithEvents TxtRut As TextBox
-    Friend WithEvents TxtDV As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents BtnBuscar As Button
     Friend WithEvents TxtBuscar As TextBox
     Friend WithEvents NudCantidad As NumericUpDown
@@ -244,6 +255,13 @@ Partial Class FrmVenta
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents BtnDisminuir As Button
     Friend WithEvents BtnAñadir As Button
-    Friend WithEvents BtnTotal As TextBox
+    Friend WithEvents TxtTotal As TextBox
     Friend WithEvents LblTotal As Label
+    Friend WithEvents CmbTipo As ComboBox
+    Friend WithEvents Tipo As DataGridViewTextBoxColumn
+    Friend WithEvents Id As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Precio As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents Total As DataGridViewTextBoxColumn
 End Class
