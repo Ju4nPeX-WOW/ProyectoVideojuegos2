@@ -62,3 +62,27 @@ C:\Users\Camilo\Documents\ProyectoVideojuegos2\ProyectoVideojuegos\obj\Debug\Pro
 C:\Users\Camilo\Documents\ProyectoVideojuegos2\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.exe
 C:\Users\Camilo\Documents\ProyectoVideojuegos2\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.xml
 C:\Users\Camilo\Documents\ProyectoVideojuegos2\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.pdb
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\bin\Debug\ProyectoVideojuegos.exe.config
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\bin\Debug\ProyectoVideojuegos.exe
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\bin\Debug\ProyectoVideojuegos.pdb
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\bin\Debug\ProyectoVideojuegos.xml
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.vbprojAssemblyReference.cache
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.frmAgregarCategoria.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmAgregarConsola.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmAgregarEmpleado.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.frmAgregarJuego.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.frmPrincipalJuego.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmEliminarConsola.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmListarConsola.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmListarEmpleados.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmMenu.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmModificarConsola.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.frmPrincipalCategorias.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmVenta.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.Login.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.Resources.resources
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.vbproj.GenerateResource.cache
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.vbproj.CoreCompileInputs.cache
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.exe
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.xml
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.pdb
