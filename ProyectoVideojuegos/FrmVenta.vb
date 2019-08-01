@@ -1,20 +1,6 @@
 ﻿Public Class FrmVenta
     Private Sub FrmVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'DEFINIR TABLA 
-        Dim tabla As New DataTable
-        'DEFINIR COLUMNAS
-        Dim columna1 As New DataColumn
-        Dim columna2 As New DataColumn
-        'AGREGAR  A TABLA
-        tabla.Columns.Add(columna1)
-        tabla.Columns.Add(columna2)
-        tabla.Rows.Add(0, "Consola")
-        tabla.Rows.Add({1, "VideoJuegos"})
-        Dim dataset As New DataSet
-        dataset.Tables.Add(tabla)
-        CmbTipo.DisplayMember = dataset.Tables(0).Columns(1).ToString
-        CmbTipo.ValueMember = dataset.Tables(0).Columns(0).ToString
-        CmbTipo.DataSource = dataset.Tables(0)
+        CmbTipo.SelectedIndex = 0
     End Sub
 
     Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
@@ -42,7 +28,7 @@
             Next
 
             If Not encontrado Then
-                tipo = CmbTipo.SelectedItem.ToString
+                tipo = CmbTipo.SelectedItem
                 Dim nombre = DgvProductos.CurrentRow.Cells.Item(1).Value.ToString
                 Dim precio = DgvProductos.CurrentRow.Cells.Item(2).Value
                 Dim total = cantidad * precio
@@ -115,7 +101,6 @@
             bsn.HacerVenta(venta)
             'Detalle Venta
             Dim id = bsn.ObtenerUltimoId
-            MsgBox(id)
             For i = 0 To DgvProductosSeleccionados.RowCount - 2
                 Dim detalle As New DetalleVenta
                 detalle.VentaId = id
@@ -123,7 +108,12 @@
                 detalle.Precio = DgvProductosSeleccionados.Rows(i).Cells.Item(3).Value
                 detalle.Cantidad = DgvProductosSeleccionados.Rows(i).Cells.Item(4).Value
                 detalle.Total = DgvProductosSeleccionados.Rows(i).Cells.Item(5).Value
-
+                Dim tipo = DgvProductosSeleccionados.Rows(i).Cells.Item(0).Value.ToString
+                If tipo.Equals("Consolas") Then
+                    detalle.Tipo = 0
+                ElseIf tipo.Equals("VideoJuegos") Then
+                    detalle.Tipo = 1
+                End If
                 bsn.InsertarDetalle(detalle)
 
             Next
@@ -135,9 +125,10 @@
         ''DATASET
         Dim bsn As New BsnVenta
         Dim dataset As New DataSet
-        If CmbTipo.SelectedValue = 0 Then
+        Dim tipo = CmbTipo.SelectedItem.ToString
+        If tipo.Equals("Consolas") Then
             dataset = bsn.GetConsolas()
-        ElseIf CmbTipo.SelectedValue = 1 Then
+        ElseIf tipo.Equals("VideoJuegos") Then
             dataset = bsn.GetJuegos
 
         End If

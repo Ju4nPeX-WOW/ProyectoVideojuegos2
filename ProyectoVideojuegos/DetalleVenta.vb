@@ -4,6 +4,7 @@
     Private _Precio As Integer
     Private _Cantidad As Integer
     Private _Total As Integer
+    Private _Tipo As Byte
 
     Public Property VentaId
         Get
@@ -45,6 +46,15 @@
         End Get
         Set(value)
             _Total = value
+        End Set
+    End Property
+
+    Public Property Tipo
+        Get
+            Return _Tipo
+        End Get
+        Set(value)
+            _Tipo = value
         End Set
     End Property
 

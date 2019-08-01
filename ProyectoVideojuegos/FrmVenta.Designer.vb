@@ -26,6 +26,12 @@ Partial Class FrmVenta
         Me.BtnRealizarVenta = New System.Windows.Forms.Button()
         Me.DgvProductos = New System.Windows.Forms.DataGridView()
         Me.DgvProductosSeleccionados = New System.Windows.Forms.DataGridView()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LblEmpleado = New System.Windows.Forms.Label()
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
@@ -37,12 +43,6 @@ Partial Class FrmVenta
         Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.LblTotal = New System.Windows.Forms.Label()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
-        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvProductosSeleccionados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,6 +84,42 @@ Partial Class FrmVenta
         Me.DgvProductosSeleccionados.Name = "DgvProductosSeleccionados"
         Me.DgvProductosSeleccionados.Size = New System.Drawing.Size(721, 94)
         Me.DgvProductosSeleccionados.TabIndex = 30
+        '
+        'Tipo
+        '
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        '
+        'Id
+        '
+        Me.Id.HeaderText = "Id"
+        Me.Id.Name = "Id"
+        Me.Id.ReadOnly = True
+        '
+        'Nombre
+        '
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        Me.Cantidad.ReadOnly = True
+        '
+        'Total
+        '
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
         '
         'LblEmpleado
         '
@@ -172,47 +208,12 @@ Partial Class FrmVenta
         '
         Me.CmbTipo.DisplayMember = "H,M"
         Me.CmbTipo.FormattingEnabled = True
+        Me.CmbTipo.Items.AddRange(New Object() {"Consolas", "VideoJuegos"})
         Me.CmbTipo.Location = New System.Drawing.Point(40, 20)
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(121, 21)
         Me.CmbTipo.TabIndex = 45
         Me.CmbTipo.ValueMember = "0,1"
-        '
-        'Tipo
-        '
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        Me.Tipo.ReadOnly = True
-        '
-        'Id
-        '
-        Me.Id.HeaderText = "Id"
-        Me.Id.Name = "Id"
-        Me.Id.ReadOnly = True
-        '
-        'Nombre
-        '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Precio
-        '
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        '
-        'Cantidad
-        '
-        Me.Cantidad.HeaderText = "Cantidad"
-        Me.Cantidad.Name = "Cantidad"
-        Me.Cantidad.ReadOnly = True
-        '
-        'Total
-        '
-        Me.Total.HeaderText = "Total"
-        Me.Total.Name = "Total"
-        Me.Total.ReadOnly = True
         '
         'FrmVenta
         '

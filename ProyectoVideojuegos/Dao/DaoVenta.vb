@@ -27,8 +27,8 @@
     End Function
     Public Sub InsertDetalle(d As DetalleVenta)
         Dim instruccion As New Instrucciones
-        Dim columnas = "Venta_Id,Producto_Id,Precio,Cantidad,Total"
-        Dim valores As String = d.VentaId & "," & d.ProductoId & "," & d.Precio & "," & d.Cantidad & "," & d.Total
+        Dim columnas = "Venta_Id,Producto_Id,Precio,Cantidad,Total,Tipo"
+        Dim valores As String = d.VentaId & "," & d.ProductoId & "," & d.Precio & "," & d.Cantidad & "," & d.Total & "," & d.Tipo
         If Not instruccion.Insertar("DetalleVenta", columnas, valores) Then
             MsgBox("No fue posible guardar el detalle de la venta")
         End If
