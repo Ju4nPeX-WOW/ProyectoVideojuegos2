@@ -23,6 +23,6 @@
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Me.Dispose()
-        frmPrincipalJuego.Show()
+        FrmMenu.Show()
     End Sub
 End Class

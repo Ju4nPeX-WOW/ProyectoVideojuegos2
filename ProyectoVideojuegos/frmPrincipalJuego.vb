@@ -70,11 +70,6 @@
         dgvJuegos.DataSource = bsnJuego.CargarJuegos()
     End Sub
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        Me.Dispose()
-        frmAgregarJuego.Show()
-    End Sub
-
     Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         Me.Dispose()
         FrmMenu.Show()

@@ -23,7 +23,6 @@ Partial Class frmPrincipalJuego
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvJuegos = New System.Windows.Forms.DataGridView()
-        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
@@ -48,18 +47,9 @@ Partial Class frmPrincipalJuego
         Me.dgvJuegos.Size = New System.Drawing.Size(572, 292)
         Me.dgvJuegos.TabIndex = 0
         '
-        'btnAgregar
-        '
-        Me.btnAgregar.Location = New System.Drawing.Point(80, 446)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAgregar.TabIndex = 1
-        Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = True
-        '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(182, 446)
+        Me.btnEditar.Location = New System.Drawing.Point(102, 446)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(75, 23)
         Me.btnEditar.TabIndex = 2
@@ -68,7 +58,7 @@ Partial Class frmPrincipalJuego
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(345, 446)
+        Me.btnEliminar.Location = New System.Drawing.Point(274, 446)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 3
@@ -175,7 +165,6 @@ Partial Class frmPrincipalJuego
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnEditar)
-        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.dgvJuegos)
         Me.MaximumSize = New System.Drawing.Size(612, 518)
         Me.MinimumSize = New System.Drawing.Size(612, 518)
@@ -188,7 +177,6 @@ Partial Class frmPrincipalJuego
     End Sub
 
     Friend WithEvents dgvJuegos As DataGridView
-    Friend WithEvents btnAgregar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnVolver As Button

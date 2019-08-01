@@ -41,12 +41,6 @@
             txtNombre.Enabled = True
         End If
     End Sub
-
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        Me.Dispose()
-        frmAgregarCategoria.Show()
-    End Sub
-
     Private Sub DgvCategorias_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCategoria.CellClick
         Dim numero As Integer
         numero = e.RowIndex
