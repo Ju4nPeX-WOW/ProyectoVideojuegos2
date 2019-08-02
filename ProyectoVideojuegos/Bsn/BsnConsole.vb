@@ -27,5 +27,11 @@
         DaoConsole.EliminarConsola(condicion)
     End Sub
 
+    Public Function ObtenerConsola(id As String)
+        Dim dao As New DaoConsole
+        Return dao.ObtenerConsola(id)
+    End Function
+
+
 
 End Class

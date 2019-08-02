@@ -18,4 +18,7 @@ Public Class daoJuego
     Public Sub EditarJuegos(colvalor, condicion)
         instrucciones.Modificar(tabla, colvalor, condicion)
     End Sub
+    Public Function ObtenerJuego(id As String)
+        Return instrucciones.Seleccionar("Juego", "*", "WHERE Id_juego = " & id)
+    End Function
 End Class

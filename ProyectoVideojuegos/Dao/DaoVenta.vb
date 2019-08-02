@@ -45,5 +45,22 @@
         End If
     End Sub
 
+    Public Sub ReducirStock(d As DetalleVenta, oldStock As Integer)
+        Dim instruccion As New Instrucciones
+        Dim newStock = oldStock - d.Cantidad
+        If d.Tipo = 0 Then
+            '' en consolas
+            If Not instruccion.Modificar("Console", "Stock = " & newStock, "WHERE Id = " & d.ProductoId) Then
+                MsgBox("No fue posible  actualizar stock")
+            End If
 
+        ElseIf d.Tipo = 1 Then
+            ''en juegos
+            If Not instruccion.Modificar("Juego", "Stock = " & newStock, "WHERE Id_juego = " & d.ProductoId) Then
+                MsgBox("No fue posible stock")
+            End If
+
+        End If
+
+    End Sub
 End Class

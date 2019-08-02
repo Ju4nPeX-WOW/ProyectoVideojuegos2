@@ -4,12 +4,21 @@
     Private _categoria As String
     Private _descripcion As String
     Private _precio As Integer
+    Private _stock As Integer
     Public Property Precio() As Integer
         Get
             Return _precio
         End Get
         Set(ByVal value As Integer)
             _precio = value
+        End Set
+    End Property
+    Public Property Stock As Integer
+        Get
+            Return _stock
+        End Get
+        Set(ByVal value As Integer)
+            _stock = value
         End Set
     End Property
     Public Property Id() As String

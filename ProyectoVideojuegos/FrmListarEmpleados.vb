@@ -89,6 +89,12 @@
                 'Limpiar
                 Limpiar()
                 Bloquear()
+                'actualizar dgv
+                ''cargar dvg
+                Dim dataset As New DataSet
+                dataset = bsn.GetEmpleados
+                DgvEmpleados.DataSource = dataset.Tables(0)
+
 
 
             Else

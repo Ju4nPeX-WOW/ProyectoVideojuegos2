@@ -30,5 +30,21 @@
     Public Sub InsertarDetalle(d As DetalleVenta)
         Dim dao As New DaoVenta
         dao.InsertDetalle(d)
+        ActualizarStock(d)
     End Sub
+    Private Sub ActualizarStock(d As DetalleVenta)
+        If d.Tipo = 0 Then
+            Dim bsnc As New BsnConsole
+            Dim c As Consola = bsnc.ObtenerConsola(d.ProductoId)
+            c.Stock = c.Stock - d.Cantidad
+            bsnc.ModificarConsola(c)
+        ElseIf d.Tipo = 1 Then
+            Dim bsnj As New bsnJuego
+            Dim j As Juego = bsnj.ObtenerJuego(d.ProductoId)
+            j.Stock = j.Stock - d.Cantidad
+            bsnj.EditarJuegos(j)
+        End If
+
+    End Sub
+
 End Class

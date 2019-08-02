@@ -6,6 +6,9 @@
     Public Function obtenerConsolas()
         Return Instrucciones.Seleccionar("Console", "*", "")
     End Function
+    Public Function ObtenerConsola(id As String)
+        Return Instrucciones.Seleccionar("Console", "*", "WHERE Id = " & id)
+    End Function
 
     Public Sub AgregarConsola(columnas, valores)
         Instrucciones.Insertar(tabla, columnas, valores)

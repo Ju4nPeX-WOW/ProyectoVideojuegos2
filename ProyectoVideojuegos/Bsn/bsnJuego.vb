@@ -27,4 +27,9 @@
         daoJuego.EditarJuegos(colvalor, condicion)
     End Sub
 
+    Public Function ObtenerJuego(id As String)
+        Dim dao As New daoJuego
+        Return dao.ObtenerJuego(id)
+    End Function
+
 End Class
