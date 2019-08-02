@@ -40,6 +40,7 @@ Partial Class FrmModificarConsola
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.DarkRed
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -48,7 +49,7 @@ Partial Class FrmModificarConsola
         Me.Button1.Size = New System.Drawing.Size(126, 53)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button3
         '
