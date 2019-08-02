@@ -90,10 +90,10 @@
 
     Private Sub BtnRealizarVenta_Click(sender As Object, e As EventArgs) Handles BtnRealizarVenta.Click
         ''VALIDAR
-        If Integer.Parse(TxtTotal.Text) <> 0 Then
+        If TxtTotal.TextLength <> 0 Then
             '' instaciar el objeto venta
             Dim venta As New Venta
-            venta.EmpleadoId = 0
+            venta.EmpleadoId = 1
             venta.Fecha = DateTime.Now.ToString("dd-MM-yyyy")
             venta.Total = TxtTotal.Text
             ''bsn 
@@ -117,8 +117,10 @@
                 bsn.InsertarDetalle(detalle)
 
             Next
-
+        Else
+            MsgBox("No hay productos seleccionados")
         End If
+
     End Sub
 
     Private Sub CmbTipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbTipo.SelectedIndexChanged

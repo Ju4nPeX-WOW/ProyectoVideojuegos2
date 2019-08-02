@@ -115,6 +115,12 @@
     <Compile Include="frmAgregarJuego.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmListarVenta.Designer.vb">
+      <DependentUpon>FrmListarVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPrincipalJuego.Designer.vb">
       <DependentUpon>frmPrincipalJuego.vb</DependentUpon>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarJuego.resx">
       <DependentUpon>frmAgregarJuego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarVenta.resx">
+      <DependentUpon>FrmListarVenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalJuego.resx">
       <DependentUpon>frmPrincipalJuego.vb</DependentUpon>

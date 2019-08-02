@@ -7,6 +7,17 @@
         Dim dao As New DaoVenta
         Return dao.GetJuegos()
     End Function
+    Public Function GetVentas()
+        Dim dao As New DaoVenta
+        Dim dataset As New DataSet
+        dataset = dao.GetVentas()
+        MsgBox(dataset.Tables(0).Rows.Count)
+        Return dataset
+    End Function
+    'Public Function GetDetalles()
+    'Dim dao As New DaoVenta
+    'Return dao.GetDetalles()
+    'End Function
 
     Public Sub HacerVenta(v As Venta)
         Dim dao As New DaoVenta
