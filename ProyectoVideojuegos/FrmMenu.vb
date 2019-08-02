@@ -54,4 +54,10 @@
         Dim form As New FrmListarVenta
         form.ShowDialog()
     End Sub
+
+    Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+        Me.Hide()
+        Login.Show()
+
+    End Sub
 End Class

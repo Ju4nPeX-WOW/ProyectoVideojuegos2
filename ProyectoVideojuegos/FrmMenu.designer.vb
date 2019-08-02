@@ -66,7 +66,7 @@ Partial Class FrmMenu
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(164, 28)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(180, 28)
         Me.CerrarSesionToolStripMenuItem.Text = "Cerrar sesion"
         '
         'VentaToolStripMenuItem

@@ -46,3 +46,4 @@ C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuego
 C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.exe
 C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.xml
 C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.pdb
+C:\Users\JUAN PABLO\Desktop\NET\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmListarVenta.resources
