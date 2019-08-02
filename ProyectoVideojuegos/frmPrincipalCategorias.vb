@@ -44,10 +44,12 @@
     Private Sub DgvCategorias_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCategoria.CellClick
         Dim numero As Integer
         numero = e.RowIndex
-        Dim filaSeleccionada As DataGridViewRow
-        filaSeleccionada = dgvCategoria.Rows(numero)
-        txtId.Text = filaSeleccionada.Cells(0).Value.ToString()
-        txtNombre.Text = filaSeleccionada.Cells(1).Value.ToString()
+        If numero >= 0 Then
+            Dim filaSeleccionada As DataGridViewRow
+            filaSeleccionada = dgvCategoria.Rows(numero)
+            txtId.Text = filaSeleccionada.Cells(0).Value.ToString()
+            txtNombre.Text = filaSeleccionada.Cells(1).Value.ToString()
+        End If
     End Sub
 
     Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click

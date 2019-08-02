@@ -34,16 +34,26 @@ Partial Class frmPrincipalCategorias
         '
         'dgvCategoria
         '
+        Me.dgvCategoria.AllowUserToAddRows = False
+        Me.dgvCategoria.AllowUserToDeleteRows = False
+        Me.dgvCategoria.AllowUserToResizeColumns = False
+        Me.dgvCategoria.AllowUserToResizeRows = False
+        Me.dgvCategoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCategoria.Location = New System.Drawing.Point(12, 12)
+        Me.dgvCategoria.MultiSelect = False
         Me.dgvCategoria.Name = "dgvCategoria"
         Me.dgvCategoria.ReadOnly = True
+        Me.dgvCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvCategoria.Size = New System.Drawing.Size(471, 257)
         Me.dgvCategoria.TabIndex = 0
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(95, 336)
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEditar.Location = New System.Drawing.Point(79, 331)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(75, 23)
         Me.btnEditar.TabIndex = 2
@@ -52,7 +62,10 @@ Partial Class frmPrincipalCategorias
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(209, 336)
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEliminar.Location = New System.Drawing.Point(204, 331)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 3
@@ -61,7 +74,10 @@ Partial Class frmPrincipalCategorias
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(337, 336)
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnVolver.Location = New System.Drawing.Point(337, 331)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(75, 23)
         Me.btnVolver.TabIndex = 4
@@ -70,17 +86,19 @@ Partial Class frmPrincipalCategorias
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(159, 292)
+        Me.txtNombre.Location = New System.Drawing.Point(140, 289)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(253, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(272, 20)
         Me.txtNombre.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(106, 295)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(76, 291)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 18)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Nombre:"
         '
@@ -95,6 +113,8 @@ Partial Class frmPrincipalCategorias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.DarkRed
         Me.ClientSize = New System.Drawing.Size(495, 366)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
@@ -103,9 +123,15 @@ Partial Class frmPrincipalCategorias
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.dgvCategoria)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(511, 405)
+        Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(511, 405)
         Me.Name = "frmPrincipalCategorias"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CATEGORÍAS"
         CType(Me.dgvCategoria, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

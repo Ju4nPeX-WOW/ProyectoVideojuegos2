@@ -30,23 +30,19 @@
     End Sub
 
     Private Sub ListarJuegosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarJuegosToolStripMenuItem.Click
-        Me.Hide()
-        frmPrincipalJuego.Show()
+        frmPrincipalJuego.ShowDialog()
     End Sub
 
     Private Sub AgregarJuegoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarJuegoToolStripMenuItem.Click
-        Me.Hide()
-        frmAgregarJuego.Show()
+        frmAgregarJuego.ShowDialog()
     End Sub
 
     Private Sub ListarCategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarCategoriaToolStripMenuItem.Click
-        Me.Hide()
-        frmPrincipalCategorias.Show()
+        frmPrincipalCategorias.ShowDialog()
     End Sub
 
     Private Sub AgregarCategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarCategoriaToolStripMenuItem.Click
-        Me.Hide()
-        frmAgregarCategoria.Show()
+        frmAgregarCategoria.ShowDialog()
     End Sub
 
     Private Sub HacerVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HacerVentaToolStripMenuItem.Click
