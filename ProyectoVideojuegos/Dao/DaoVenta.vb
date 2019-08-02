@@ -8,6 +8,17 @@
         Dim instruccion As New Instrucciones
         Return instruccion.Seleccionar("Juego", "Id_juego as Id,Nombre,Precio,Stock,Descripcion", "")
     End Function
+    Public Function GetVentas()
+        Dim instruccion As New Instrucciones
+        Dim t = "Venta INNER Join Empleado On Venta.Empleado_Id = Empleado.Id "
+        Return instruccion.Seleccionar(t, "Venta.Id,Empleado.Nombre as Empleado,Venta.Fecha,Venta.Total", "")
+        'Return instruccion.Seleccionar("Venta", "Id,Empleado_Id as Empleado,Fecha,Total", "")
+    End Function
+
+    'Public Function GetDetalles()
+    'Dim instruccion As New Instrucciones
+    'Return instruccion.Seleccionar("DetalleVenta", "Id_juego as Id,Nombre,Precio,Stock,Descripcion", "")
+    'End Function
 
 
     Public Sub InsertVenta(v As Venta)

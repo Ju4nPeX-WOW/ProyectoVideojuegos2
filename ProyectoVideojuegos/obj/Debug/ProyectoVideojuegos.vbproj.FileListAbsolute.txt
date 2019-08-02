@@ -22,3 +22,4 @@ C:\Users\kevin\Desktop\VP33\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.vb
 C:\Users\kevin\Desktop\VP33\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.exe
 C:\Users\kevin\Desktop\VP33\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.xml
 C:\Users\kevin\Desktop\VP33\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.pdb
+C:\Users\kevin\Desktop\VP33\ProyectoVideojuegos\obj\Debug\ProyectoVideojuegos.FrmListarVenta.resources

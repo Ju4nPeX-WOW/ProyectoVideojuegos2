@@ -47,10 +47,12 @@ Partial Class FrmMenu
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.VentaToolStripMenuItem, Me.JuegosToolStripMenuItem, Me.ConsolasToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.ConsolasToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(9, 5, 0, 5)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1200, 37)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -58,130 +60,138 @@ Partial Class FrmMenu
         '
         Me.InicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSesionToolStripMenuItem})
         Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
-        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(56, 27)
         Me.InicioToolStripMenuItem.Text = "Inicio"
         '
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(164, 28)
         Me.CerrarSesionToolStripMenuItem.Text = "Cerrar sesion"
         '
         'VentaToolStripMenuItem
         '
         Me.VentaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HacerVentaToolStripMenuItem, Me.ListarVentasToolStripMenuItem})
         Me.VentaToolStripMenuItem.Name = "VentaToolStripMenuItem"
-        Me.VentaToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.VentaToolStripMenuItem.Size = New System.Drawing.Size(56, 27)
         Me.VentaToolStripMenuItem.Text = "Venta"
         '
         'HacerVentaToolStripMenuItem
         '
         Me.HacerVentaToolStripMenuItem.Name = "HacerVentaToolStripMenuItem"
-        Me.HacerVentaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HacerVentaToolStripMenuItem.Size = New System.Drawing.Size(180, 28)
         Me.HacerVentaToolStripMenuItem.Text = "Hacer venta"
         '
         'ListarVentasToolStripMenuItem
         '
         Me.ListarVentasToolStripMenuItem.Name = "ListarVentasToolStripMenuItem"
-        Me.ListarVentasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarVentasToolStripMenuItem.Size = New System.Drawing.Size(180, 28)
         Me.ListarVentasToolStripMenuItem.Text = "Listar ventas"
         '
         'JuegosToolStripMenuItem
         '
         Me.JuegosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarJuegoToolStripMenuItem, Me.ListarJuegosToolStripMenuItem})
         Me.JuegosToolStripMenuItem.Name = "JuegosToolStripMenuItem"
-        Me.JuegosToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
+        Me.JuegosToolStripMenuItem.Size = New System.Drawing.Size(66, 27)
         Me.JuegosToolStripMenuItem.Text = "Juegos"
         '
         'AgregarJuegoToolStripMenuItem
         '
         Me.AgregarJuegoToolStripMenuItem.Name = "AgregarJuegoToolStripMenuItem"
-        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.AgregarJuegoToolStripMenuItem.Size = New System.Drawing.Size(168, 28)
         Me.AgregarJuegoToolStripMenuItem.Text = "Agregar juego"
         '
         'ListarJuegosToolStripMenuItem
         '
         Me.ListarJuegosToolStripMenuItem.Name = "ListarJuegosToolStripMenuItem"
-        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.ListarJuegosToolStripMenuItem.Size = New System.Drawing.Size(168, 28)
         Me.ListarJuegosToolStripMenuItem.Text = "Listar juegos"
         '
         'ConsolasToolStripMenuItem
         '
         Me.ConsolasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarCategoriaToolStripMenuItem, Me.ListarCategoriaToolStripMenuItem})
         Me.ConsolasToolStripMenuItem.Name = "ConsolasToolStripMenuItem"
-        Me.ConsolasToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
+        Me.ConsolasToolStripMenuItem.Size = New System.Drawing.Size(90, 27)
         Me.ConsolasToolStripMenuItem.Text = "Categorias"
         '
         'AgregarCategoriaToolStripMenuItem
         '
         Me.AgregarCategoriaToolStripMenuItem.Name = "AgregarCategoriaToolStripMenuItem"
-        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.AgregarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(194, 28)
         Me.AgregarCategoriaToolStripMenuItem.Text = "Agregar categoria"
         '
         'ListarCategoriaToolStripMenuItem
         '
         Me.ListarCategoriaToolStripMenuItem.Name = "ListarCategoriaToolStripMenuItem"
-        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ListarCategoriaToolStripMenuItem.Size = New System.Drawing.Size(194, 28)
         Me.ListarCategoriaToolStripMenuItem.Text = "Listar categoria"
         '
         'EmpleadosToolStripMenuItem
         '
         Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarEmpleadosToolStripMenuItem, Me.ListarEmpleadosToolStripMenuItem})
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(90, 27)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'AgregarEmpleadosToolStripMenuItem
         '
         Me.AgregarEmpleadosToolStripMenuItem.Name = "AgregarEmpleadosToolStripMenuItem"
-        Me.AgregarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AgregarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(202, 28)
         Me.AgregarEmpleadosToolStripMenuItem.Text = "Agregar empleados"
         '
         'ListarEmpleadosToolStripMenuItem
         '
         Me.ListarEmpleadosToolStripMenuItem.Name = "ListarEmpleadosToolStripMenuItem"
-        Me.ListarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.ListarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(202, 28)
         Me.ListarEmpleadosToolStripMenuItem.Text = "Listar empleados"
         '
         'ConsolasToolStripMenuItem1
         '
         Me.ConsolasToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarConsolToolStripMenuItem, Me.ModificarConsolaToolStripMenuItem, Me.EliminarConsolaToolStripMenuItem, Me.ListarConsolasToolStripMenuItem})
         Me.ConsolasToolStripMenuItem1.Name = "ConsolasToolStripMenuItem1"
-        Me.ConsolasToolStripMenuItem1.Size = New System.Drawing.Size(67, 20)
+        Me.ConsolasToolStripMenuItem1.Size = New System.Drawing.Size(78, 27)
         Me.ConsolasToolStripMenuItem1.Text = "Consolas"
         '
         'AgregarConsolToolStripMenuItem
         '
         Me.AgregarConsolToolStripMenuItem.Name = "AgregarConsolToolStripMenuItem"
-        Me.AgregarConsolToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.AgregarConsolToolStripMenuItem.Size = New System.Drawing.Size(191, 28)
         Me.AgregarConsolToolStripMenuItem.Text = "Agregar consola"
         '
         'ModificarConsolaToolStripMenuItem
         '
         Me.ModificarConsolaToolStripMenuItem.Name = "ModificarConsolaToolStripMenuItem"
-        Me.ModificarConsolaToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.ModificarConsolaToolStripMenuItem.Size = New System.Drawing.Size(191, 28)
         Me.ModificarConsolaToolStripMenuItem.Text = "Modificar consola"
         '
         'EliminarConsolaToolStripMenuItem
         '
         Me.EliminarConsolaToolStripMenuItem.Name = "EliminarConsolaToolStripMenuItem"
-        Me.EliminarConsolaToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.EliminarConsolaToolStripMenuItem.Size = New System.Drawing.Size(191, 28)
         Me.EliminarConsolaToolStripMenuItem.Text = "Eliminar consola"
         '
         'ListarConsolasToolStripMenuItem
         '
         Me.ListarConsolasToolStripMenuItem.Name = "ListarConsolasToolStripMenuItem"
-        Me.ListarConsolasToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.ListarConsolasToolStripMenuItem.Size = New System.Drawing.Size(191, 28)
         Me.ListarConsolasToolStripMenuItem.Text = "Listar consolas"
         '
         'FrmMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.DarkRed
+        Me.ClientSize = New System.Drawing.Size(1200, 749)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.DarkRed
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaximizeBox = False
         Me.Name = "FrmMenu"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

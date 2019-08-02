@@ -53,4 +53,9 @@
         Dim form As New FrmVenta
         form.ShowDialog()
     End Sub
+
+    Private Sub ListarVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarVentasToolStripMenuItem.Click
+        Dim form As New FrmListarVenta
+        form.ShowDialog()
+    End Sub
 End Class
