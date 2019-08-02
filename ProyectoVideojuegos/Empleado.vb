@@ -47,4 +47,37 @@
         End Set
     End Property
 
+
+
+    Public Function ValidarRut(rut As String, exDV As String)
+        Dim valido = False 'Boolean a retornar
+        Dim inDV = ""      'Digito Verificador que debe ser 
+        Dim serie = 2      'serie numerica 2 a 7
+        Dim suma = 0
+        'Se recorre el rut de derecha a izquierda
+        For i = rut.Length To 1 Step -1
+            'se obtiene la suma de la multiplicacion de los digitos por la serie numerica 2 a 7
+            suma = suma + (Integer.Parse(rut(i - 1)) * serie)
+            If serie = 7 Then   'reiniciamos la serie
+                serie = 2
+            Else
+                serie += 1      'aumentamos en 1 la serie
+            End If
+        Next
+        inDV = (11 - (suma - (11 * (suma \ 11)))).ToString 'se obtiene el digito verificador
+        'si corresponde se hace el cambio de : 10 a K - 11 a 0
+        If inDV.Equals("10") Then
+            inDV = "K"
+        ElseIf inDV.Equals("11") Then
+            inDV = "0"
+        End If
+        'se determina si es valido
+        If inDV.Equals(exDV) Then
+            valido = True
+        Else
+            valido = False
+        End If
+        Return valido
+    End Function
+
 End Class
