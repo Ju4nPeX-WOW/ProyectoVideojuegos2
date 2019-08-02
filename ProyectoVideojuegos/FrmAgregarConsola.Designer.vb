@@ -37,40 +37,48 @@ Partial Class FrmAgregarConsola
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(73, 96)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(45, 61)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
+        Me.Label1.Size = New System.Drawing.Size(62, 23)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Consola:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(73, 136)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(36, 102)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(74, 23)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Categoria"
+        Me.Label2.Text = "Categoria:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(73, 168)
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(24, 139)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
+        Me.Label3.Size = New System.Drawing.Size(86, 23)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Descripcion"
+        Me.Label3.Text = "Descripción:"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(216, 93)
+        Me.TextBox1.Location = New System.Drawing.Point(129, 64)
+        Me.TextBox1.MaxLength = 30
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(461, 20)
         Me.TextBox1.TabIndex = 4
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(216, 168)
+        Me.TextBox3.Location = New System.Drawing.Point(129, 139)
+        Me.TextBox3.MaxLength = 100
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(461, 87)
@@ -78,7 +86,10 @@ Partial Class FrmAgregarConsola
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(515, 323)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(450, 294)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 52)
         Me.Button1.TabIndex = 7
@@ -88,7 +99,10 @@ Partial Class FrmAgregarConsola
         'Button2
         '
         Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Button2.Location = New System.Drawing.Point(105, 323)
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(49, 294)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(137, 52)
         Me.Button2.TabIndex = 8
@@ -97,8 +111,9 @@ Partial Class FrmAgregarConsola
         '
         'ComboBox1
         '
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(216, 133)
+        Me.ComboBox1.Location = New System.Drawing.Point(129, 104)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(461, 21)
         Me.ComboBox1.TabIndex = 9
@@ -106,26 +121,30 @@ Partial Class FrmAgregarConsola
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(73, 271)
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(55, 234)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.Size = New System.Drawing.Size(52, 23)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Precio:"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(216, 268)
+        Me.TextBox2.Location = New System.Drawing.Point(129, 239)
+        Me.TextBox2.MaxLength = 10
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(174, 20)
         Me.TextBox2.TabIndex = 11
         '
         'FrmAgregarConsola
         '
-        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.DarkRed
         Me.CancelButton = Me.Button2
-        Me.ClientSize = New System.Drawing.Size(800, 408)
+        Me.ClientSize = New System.Drawing.Size(663, 392)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox1)
@@ -136,7 +155,9 @@ Partial Class FrmAgregarConsola
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "FrmAgregarConsola"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAgregarConsola"
         Me.ResumeLayout(False)
         Me.PerformLayout()

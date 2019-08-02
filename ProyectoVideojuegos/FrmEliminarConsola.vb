@@ -3,7 +3,7 @@
     Dim dataset As New DataSet
     Dim BsnConsole As New BsnConsole
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub FrmEliminarConsola_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -16,7 +16,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If dgvConsolas.CurrentRow.Index > -1 Then
 
-            Dim response = MsgBox("¿Esta seguro de eliminar?", vbYesNo, "Eliminando " & dgvConsolas.CurrentRow.Cells(1).Value)
+            Dim response = MsgBox("¿Esta seguro de eliminar " & dgvConsolas.CurrentRow.Cells(1).Value & "?", vbYesNo, "Confirmacion ")
             If response = 6 Then
                 Dim Consola As New Consola()
                 Consola.Id = dgvConsolas.CurrentRow.Cells(0).Value

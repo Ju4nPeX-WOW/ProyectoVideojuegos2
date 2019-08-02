@@ -11,14 +11,14 @@
     End Function
 
     Public Sub AgregarConsola(Console As Consola)
-        columnas = "Consola,Categoria,Descripcion,Precio"
+        columnas = "Consola,Categoria_Id,Descripcion,Precio"
         valores = "'" & Console.NameConsole & "'," & Console.Categoria & ",'" & Console.Descripcion & "'," & Console.Precio
         DaoConsole.AgregarConsola(columnas, valores)
     End Sub
 
     Public Sub ModificarConsola(Console As Consola)
         condicion = "Id=" & Console.Id
-        colvalor = " Consola='" & Console.NameConsole & "', Categoria=" & Console.Categoria & ", Descripcion='" & Console.Descripcion & "',Precio=" & Console.Precio
+        colvalor = " Consola='" & Console.NameConsole & "', Categoria_Id=" & Console.Categoria & ", Descripcion='" & Console.Descripcion & "',Precio=" & Console.Precio
         DaoConsole.ModificarConsola(colvalor, condicion)
     End Sub
 

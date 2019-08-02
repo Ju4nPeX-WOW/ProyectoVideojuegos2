@@ -4,7 +4,7 @@
     Dim dt As New DataTable
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -22,7 +22,8 @@
             contador = contador + 1
             pal = pal & contador & "-Agregue una Descripcion" & vbCr
         End If
-        If TextBox2.Text = "" Then
+
+        If Not (IsNumeric(TextBox2.Text)) Or (TextBox2.Text = "") Then
             validado = False
             contador = contador + 1
             pal = pal & contador & "-Agregue un precio" & vbCr

@@ -69,6 +69,7 @@ Partial Class Login
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Maroon
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(470, 333)
         Me.Button1.Name = "Button1"
@@ -80,6 +81,7 @@ Partial Class Login
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Maroon
+        Me.Button2.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Location = New System.Drawing.Point(162, 333)
         Me.Button2.Name = "Button2"

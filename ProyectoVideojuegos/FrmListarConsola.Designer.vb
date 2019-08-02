@@ -38,12 +38,15 @@ Partial Class FrmListarConsola
         Me.dgvConsolas.Name = "dgvConsolas"
         Me.dgvConsolas.ReadOnly = True
         Me.dgvConsolas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvConsolas.Size = New System.Drawing.Size(749, 300)
+        Me.dgvConsolas.Size = New System.Drawing.Size(749, 259)
         Me.dgvConsolas.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(260, 370)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button1.Location = New System.Drawing.Point(261, 310)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(271, 55)
         Me.Button1.TabIndex = 1
@@ -54,10 +57,14 @@ Partial Class FrmListarConsola
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.DarkRed
+        Me.ClientSize = New System.Drawing.Size(800, 385)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dgvConsolas)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "FrmListarConsola"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmListarConsola"
         CType(Me.dgvConsolas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

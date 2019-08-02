@@ -3,7 +3,7 @@
     Dim BsnConsole As New BsnConsole
     Dim BsnCategoria As New bsnCategoria
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
+        Me.Dispose()
     End Sub
     Private Sub FrmModificarConsola_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dataset = BsnConsole.obtenerConsolas
@@ -14,13 +14,6 @@
         ComboBox1.DataSource = BsnCategoria.CargarCategorias
         ComboBox1.ValueMember = "Id_categoria"
         ComboBox1.DisplayMember = "nombre"
-    End Sub
-
-    Private Sub dgvConsolas_SelectionChanged(sender As Object, e As EventArgs) Handles dgvConsolas.SelectionChanged
-        lblIdConsola.Text = dgvConsolas.CurrentRow.Cells(0).Value
-        TextBox1.Text = dgvConsolas.CurrentRow.Cells(1).Value
-        TextBox3.Text = dgvConsolas.CurrentRow.Cells(3).Value
-        TextBox2.Text = dgvConsolas.CurrentRow.Cells(4).Value
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -39,6 +32,12 @@
             validado = False
             contador = contador + 1
             pal = pal & contador & "-Agregue una Descripcion" & vbCr
+        End If
+
+        If Not (IsNumeric(TextBox2.Text)) Or (TextBox2.Text = "") Then
+            validado = False
+            contador = contador + 1
+            pal = pal & contador & "-Agregue un precio" & vbCr
         End If
 
         'Validacion si existe algun campo vacio
@@ -61,5 +60,21 @@
                 dgvConsolas.DataSource = dataset.Tables(0).DefaultView
             End If
         End If
+    End Sub
+
+
+    Private Sub dgvConsolas_Click(sender As Object, e As EventArgs) Handles dgvConsolas.Click
+        Try
+            If dgvConsolas.CurrentRow.Index >= 0 Then
+                lblIdConsola.Text = dgvConsolas.CurrentRow.Cells(0).Value
+                TextBox1.Text = dgvConsolas.CurrentRow.Cells(1).Value
+                TextBox3.Text = dgvConsolas.CurrentRow.Cells(3).Value
+                TextBox2.Text = dgvConsolas.CurrentRow.Cells(4).Value
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+
+        End Try
     End Sub
 End Class

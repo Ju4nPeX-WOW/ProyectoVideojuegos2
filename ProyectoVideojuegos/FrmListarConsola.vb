@@ -4,7 +4,7 @@
     Dim BsnConsole As New BsnConsole()
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub FrmListarConsola_Load(sender As Object, e As EventArgs) Handles MyBase.Load
